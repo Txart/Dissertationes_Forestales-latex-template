@@ -1,6 +1,9 @@
 # Dissertationes Forestales LaTeX template
 I wrote this template in the preparation of my PhD thesis at the University of Eastern Finland.
 I followed [these guidelines](https://www.dissertationesforestales.fi/page/authors) as closely as I could or as my patience could bear.
+
+> DISCLAIMER: This is obviously unofficial.
+
 Hack this template at your own peril.
 Kids, don't try this at home!
 
