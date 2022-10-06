@@ -1,0 +1,68 @@
+\documentclass[b5paper, twoside, 10pt]{article}
+\usepackage{DFTemplate} % This loads the magic happening in DFTemplate.sty
+\addbibresource{your_bibliography.bib} % Change to match your .bib file
+
+% Some packages added here for clarity. The rest are in DFTemplate.sty
+% Add any of your own packages here
+\usepackage{import}
+\usepackage{amsmath}
+\usepackage{enumerate}
+\usepackage[hidelinks]{hyperref}
+\usepackage{siunitx} % For SI units in exponential format.
+
+\usepackage{lipsum} % Remove in production. Used to fill text with Lorem Ipsum
+
+
+\addbibresource{PhD_Thesis.bib}
+
+
+\title{Dissertationes Forestales PhD Thesis Template}
+\author{Iñaki Urzainki}
+\date{September 2022}
+
+\begin{document}
+
+\maketitle
+\newpage
+
+REPLACE THIS WITH THE CORRESPONDING SECOND PAGE.
+\newpage
+
+\section*{ABSTRACT}
+\addcontentsline{toc}{section}{ABSTRACT} % Add abstract to the TOC
+\import{sections/}{abstract.tex} 
+\newpage
+
+\section*{ACKNOWLEDGEMENTS}
+\addcontentsline{toc}{section}{ACKNOWLEDGEMENTS} % Add ACKNOWLEDGEMENTS to the TOC
+\import{sections/}{acknowledgements.tex} 
+\newpage
+
+\section*{LIST OF ORIGINAL ARTICLES}
+\addcontentsline{toc}{section}{LIST OF ORIGINAL ARTICLES} % Add LIST OF ORIGINAL ARTICLEs to the TOC
+\import{sections/}{article_list.tex} 
+\newpage
+
+\tableofcontents
+\newpage
+
+
+\section{INTRODUCTION}
+\import{sections/}{introduction.tex} % Imports text from sections/introduction.tex
+
+\section{MATERIALS AND METHODS}
+\import{sections/}{materials_and_methods.tex}
+
+
+\section{RESULTS}
+\import{sections/}{results.tex}
+
+\section{DISCUSSION}
+\import{sections/}{discussion.tex}
+\newpage
+
+% REFERENCES
+\printbibliography[title = {REFERENCES}]
+\addcontentsline{toc}{section}{REFERENCES} % Add REFERENCES to the TOC
+
+\end{document}
