@@ -71,6 +71,7 @@ footskip=10mm,
     hyperref=auto,
     backref=true % Back references to the text are a beautiful creature. But if you want to remove them, set this to false.
     ]{biblatex}
+\setlength\bibitemsep{2.0\itemsep} % Insert 1 line of vertical space between any 2 references.
 \DeclareFieldFormat*{title}{#1}
 \renewbibmacro{in:}{}
 \AtEveryBibitem{\clearlist{language}}
