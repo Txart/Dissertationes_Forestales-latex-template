@@ -12,6 +12,7 @@ outer=20mm,
 headsep=8mm,
 footskip=10mm,
 }
+\usepackage{microtype} % Fixes some latex rendering issues.
 \usepackage[]{fancyhdr} % for headers and footers
     \pagestyle{fancy} % Set normal pages' headers and footers
     \fancyhf{}
@@ -61,7 +62,8 @@ footskip=10mm,
 \usepackage[
     backend=biber,
     style=authoryear-comp,
-    sorting=ynt,
+    sorting=ynt, % year < name < title sorting order for in-text citations
+    sortcites=true,
     bibstyle=authoryear,
     natbib=true,
     maxbibnames=99,
